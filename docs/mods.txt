@@ -1,1 +1,17 @@
 this is where you will write the pseudocode corresponding to the python code in mods.py
+
+BEGIN LoadArray
+  # load data into an array
+  Let i = 1
+  Read DataValue
+  
+  # if the use enters 'xxx' it means they have finished entering data
+  WHILE DataValue < > “xxx” #the symbol '< >' means not equal to
+    Let thisArray[i] = DataValue
+    i = i + 1
+    Read DataValue
+  ENDWHILE
+  
+  Let NumElements = i
+  Display “ There are” NumElements “ items loaded into the array”
+END LoadArray
